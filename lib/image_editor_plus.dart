@@ -1516,7 +1516,11 @@ class _ImageEditorDrawingState extends State<ImageEditorDrawing> {
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           color: currentColor == black ? white : black,
-          decoration: BoxDecoration(color: Colors.orange, image: DecorationImage(image:MemoryImage(image.image), fit: BoxFit.cover),
+          decoration: BoxDecoration(
+              color: Colors.orange,
+              image: DecorationImage(
+                  image: MemoryImage(image.image),
+                  fit: BoxFit.cover)),
           child: HandSignature(
             control: control,
             color: currentColor,
